@@ -51,6 +51,9 @@ main {
 main h2 {
     font-family: "Fredericka the Great";
 }
+main h3 {
+    font-family: "Fredericka the Great";
+}
 
 main ul {
     line-height: 40px;
