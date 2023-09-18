@@ -19,12 +19,14 @@ header, footer{
     border-radius: 10px;
     box-shadow: 10px 10px 10px black;
 }
-h1 {
+nav {}
+h1,h2 {
     text-align: center;
     align-self: center;
     font-size: 50px;
     font-weight: bolder;
-    font-family: 'Noto Serif Toto', serif;
+    font-family: 'Noto Serif Toto', serif
+    ;
 
 }
 
@@ -48,7 +50,8 @@ main {
 }
 
 main h2 {
-    font-family: "Fredericka the Great";
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;
 }
 main h3 {
     font-family: "Fredericka the Great";
