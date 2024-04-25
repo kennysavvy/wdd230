@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz@8..144&display=swap');
+
+html {
+    display: grid;
+    padding: 1rem;
+}
+
+body {
+    font-family: "Roboto Serif";
+    max-width: 1000px;
+    justify-self: center;
+    width: 100%;
+}
+
+header {
+    background-color: rgb(65, 25, 25);
+    color: white;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 135px auto;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#mode {
+    grid-column: 2 / span 1;
+    justify-self: right;
+    border-radius: 20px;
+    padding: 0.35rem 1rem;
+    color: black;
+    border: 1px solid black;
+    position: relative;
+}
+
+#mode:hover {
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    justify-self: center;
+    padding: 1rem;
+    grid-row: 1 / span 2;
+}
+
+img {
+    grid-row: 1 / span 2;
+}
+
+nav {
+    background-color: aliceblue;
+    margin: 0 auto;
+    max-width: 1000px;
+    margin-top: -15px;
+    margin-bottom: -15px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem;
+    color: rgb(65, 25, 25);
+    width: auto;
+}
+
+nav a:hover {
+    border: 1px solid rgb(65, 25, 25);
+    background-color: beige;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.hero {
+    position: relative;
+}
+
+.herolabel {
+    white-space: nowrap;
+	position: absolute;
+	top: 10px;
+    left: 10px;
+	background: radial-gradient(#043a7d, #03071a);
+	border: 1px solid rgba(0, 0, 0, 0.75);
+	padding: 1.5rem;
+	box-shadow: 0 0 1rem #fff;
+	opacity: 0.85;
+    color: white;
+}
+
+.herolabel p {
+    margin: 0;
+}
+
+h2 {
+    color: rgb(65, 25, 25);
+    text-decoration: underline;
+    padding: 2rem;
+    margin: 0;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    background-color: rgb(65, 25, 25);
+    color: white;
+    margin: 0;
+    padding: 1rem;
+}
+
+.card li {
+    list-style-type: none;
+    padding: 1rem;
+}
+
+.card li a {
+    text-decoration: none;
+    padding: .2rem;
+}
+
+.card li a:hover {
+    text-decoration: underline;
+}
+
+.card {
+    text-align: left;
+    width: 100%;
+    border: 1px solid rgb(65, 25, 25);
+    max-width: 800px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px rgb(87, 84, 84);
+}
+
+
+#two p {
+    padding: 1rem;
+    text-align: center;
+}
+
+#map {
+    margin-top: 20px;
+    padding-right: 20px;
+    width: 100%;
+}
+
+iframe {
+    object-fit: fill;
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(65, 25, 25);
+    color: white;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+/*'✔️';*/
+#menu {
+	font-size: 1.5rem;
+	border: 1px solid rgba(0,0,0,.3);
+	padding: 3px 7px 6px;
+	background-color: #eee;
+	color: #000;
+ 	position: relative;
+	right: 0;
+	top: 0;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "X";
+}
+
+.navigation li {
+    display: none;
+}
+/* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
+.open li {
+	display: block;
+	width: 100%;
+}
+
+.open li a {
+	display: block;
+}
+
+#weather {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#two img {
+    width: 20%;
+    height: 20%;
+    color: rgb(2, 47, 2);
+}
+
+
+/* MAIN PAGE */
+#dir-main {
+    display: block;
+}
+
+
+article#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: .4rem;
+}
+
+#grid-btn {
+	font-size: 1.5rem;
+	border: 1px solid rgba(0,0,0,.3);
+	padding: 3px 7px 6px;
+	background-color: #eee;
+	color: #000;
+ 	position: relative;
+	right: 0;
+	top: 0;
+}
+
+.grid-btn::before {
+    content: "⏹️Grid";
+ 
+}
+
+#grid-btn.open::before {
+    content: "📄List";
+}
