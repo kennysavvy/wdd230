@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz@8..144&display=swap');
-
 html {
     display: grid;
     padding: 1rem;
@@ -96,14 +94,14 @@ img {
 
 .herolabel {
     white-space: nowrap;
-	position: absolute;
-	top: 10px;
+    position: absolute;
+    top: 10px;
     left: 10px;
-	background: radial-gradient(#043a7d, #03071a);
-	border: 1px solid rgba(0, 0, 0, 0.75);
-	padding: 1.5rem;
-	box-shadow: 0 0 1rem #fff;
-	opacity: 0.85;
+    background: radial-gradient(#043a7d, #03071a);
+    border: 1px solid rgba(0, 0, 0, 0.75);
+    padding: 1.5rem;
+    box-shadow: 0 0 1rem #fff;
+    opacity: 0.85;
     color: white;
 }
 
@@ -175,37 +173,39 @@ footer {
     padding: 1rem;
     margin-top: 2rem;
 }
+
 /*'✔️';*/
 #menu {
-	font-size: 1.5rem;
-	border: 1px solid rgba(0,0,0,.3);
-	padding: 3px 7px 6px;
-	background-color: #eee;
-	color: #000;
- 	position: relative;
-	right: 0;
-	top: 0;
+    font-size: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, .3);
+    padding: 3px 7px 6px;
+    background-color: #eee;
+    color: #000;
+    position: relative;
+    right: 0;
+    top: 0;
 }
 
 #menu::before {
-	content: "☰";
+    content: "☰";
 }
 
 #menu.open::before {
-	content: "X";
+    content: "X";
 }
 
 .navigation li {
     display: none;
 }
+
 /* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
 .open li {
-	display: block;
-	width: 100%;
+    display: block;
+    width: 100%;
 }
 
 .open li a {
-	display: block;
+    display: block;
 }
 
 #weather {
@@ -235,19 +235,19 @@ article#cards {
 }
 
 #grid-btn {
-	font-size: 1.5rem;
-	border: 1px solid rgba(0,0,0,.3);
-	padding: 3px 7px 6px;
-	background-color: #eee;
-	color: #000;
- 	position: relative;
-	right: 0;
-	top: 0;
+    font-size: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, .3);
+    padding: 3px 7px 6px;
+    background-color: #eee;
+    color: #000;
+    position: relative;
+    right: 0;
+    top: 0;
 }
 
 .grid-btn::before {
     content: "⏹️Grid";
- 
+
 }
 
 #grid-btn.open::before {
