@@ -10,16 +10,10 @@
     <meta property="og:title" content="Eze Kenneth Nwangele - WDD 230 - Web Frontend Development">
     <meta property="og:type" content="website">
     <meta property="og:description"
-        content="I am Eze Kenneth Nwangele and this is my WDD 230 - Web Frontend Development Course Assignment Home-page. The purpose of this page is to act as a link to all my assignments in this cours.">
+        content="I am Gozie Benji Nwangele  and this is my WDD 230 - Web Frontend Development Course Assignment Home-page. The purpose of this page is to act as a link to all my assignments in this cours.">
     <meta property="og:image" content="https://kennysavvy.github.io/wdd230/images/owerri.jpg">
     <meta property="og:url" content="https://kennysavvy.github.io/wdd230/">
-    <title>Eze Kenneth Nwangele - WDD 230 - Web Frontend Development</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap"
-        rel="stylesheet">
+    <title>Gozie Benji Nwangele - WDD 230 - Web Frontend Development</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
@@ -30,41 +24,50 @@
     <header>
         <img src="images/new-portrait1.webp"
             alt="A head to shoulders picture of me in a lemon shirt,  wearing spectacles" height="150" width="130">
-        <h1>WDD 230 - Web Frontend Development</h1>
+        <h1>Eze Kenneth Nwangele</h1>
         <button type="button" id="mode">Dark Mode</button>
     </header>
 
     <nav>
         <button id="menu"></button>
-
         <ul class="navigation">
-            <div class="menu-toggle"></div>
             <li><a href="./">Home</a></li>
             <li><a href="chamber/index.html">Chamber</a></li>
-            <li><a href="./">Site Plan</a></li>
-            <li><a href="./">Form</a></li>
+            <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="form.html">Form</a></li>
         </ul>
-
     </nav>
-    <main>
 
+    <main>
+        <div class="hero">
+            <div class="herolabel">
+                <p>Aba Nigeria Temple</p>
+            </div>
+            <picture>
+                <source media="(max-width: 400px)" srcset="images/hero-small.webp">
+                <img src="images/hero-medium.webp" alt="A landscape picture of the Aba Nigeria Temple" width="2"
+                    height="1">
+            </picture>
+        </div>
         <h2>WDD 230: Web Frontend Development</h2>
 
-
         <section class="card" id="one">
-            <h2>Learning Activities</h2>
+            <h3>Learning Activities</h3>
             <ul>
                 <li><a href="week01/chamber-site-plan.html">week 1</a></li>
                 <li><a href="week02/design.html">week 2</a></li>
             </ul>
-        </section>
 
+
+            </ul>
+        </section>
         <section class="card" id="two">
             <h3>Information</h3>
+            <p id="weather"><img id="weather-icon" src=".." alt=".."><span id="figcaption"></span><span
+                    id="current-temp"></span></p>
 
-
+            <p>Number of visits: <span id="visits"></span></p>
         </section>
-
     </main>
     <div id="map">
         <iframe
@@ -74,7 +77,7 @@
     </div>
 
     <footer>
-        <p id="copyright">&copy;<span id="year"></span> Eze Kenneth Nwangele. Imo </p>
+        <p id="copyright">&copy;<span id="year"></span> Eze K. Nwangele. Imo </p>
         <p> Last modified: <span id="lastModified"></span></p>
     </footer>
     <script src="scripts/links.js"></script>
