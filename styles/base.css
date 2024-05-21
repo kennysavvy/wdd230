@@ -1,3 +1,14 @@
+:root {
+    --primary-color: blue;
+    --secondary-color: green;
+    --font-size: 16px;
+}
+
+html {
+    display: grid;
+    padding: 1rem;
+}
+
 body {
     font-family: "Roboto Serif";
     max-width: 1000px;
