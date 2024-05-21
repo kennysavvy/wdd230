@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz@8..144&display=swap');
 
-
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --font-size: 16px;
+}
 
 html {
     padding: 0.2rem;
@@ -17,11 +21,12 @@ body {
     justify-self: center;
 }
 
-header, footer {
+header,
+footer {
     display: flex;
     flex-direction: column;
     background-color: rgb(2, 79, 2);
-    color:rgb(251, 247, 251);
+    color: rgb(251, 247, 251);
     padding: 1rem;
     align-items: center;
 }
@@ -32,7 +37,8 @@ header, footer {
     object-fit: contain;
 }
 
-h1, h2 {
+h1,
+h2 {
     text-align: center;
 }
 
@@ -55,25 +61,25 @@ nav ul li {
 nav a {
     display: block;
     text-decoration: none;
-    color:white;
+    color: white;
     text-align: center;
     padding: 1rem;
 }
 
 nav a:hover {
-    background-color:  rgb(209, 240, 209);
+    background-color: rgb(209, 240, 209);
     color: rgb(49, 2, 49);
 }
 
 .current {
-    background-color:  rgb(2, 1, 33);
+    background-color: rgb(2, 1, 33);
     border: 2px groove rgb(35, 18, 35);
 }
 
 main {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .hero {
@@ -111,7 +117,8 @@ section {
     margin-bottom: .5rem;
 }
 
-section h2, h2 {
+section h2,
+h2 {
     color: rgb(2, 79, 2);
 }
 
@@ -130,7 +137,7 @@ section h2, h2 {
 
 #middle-panel a {
     text-decoration: none;
-    
+
 }
 
 #middle-panel a:hover {
@@ -162,57 +169,59 @@ footer {
 
 /* For Hamburger Menu*/
 #menu {
-	font-size: 1.5rem;
-	border: 1px solid rgba(0,0,0,.3);
-	padding: 3px 7px 6px;
-	background-color: #eee;
-	color: #000;
- 	position: relative;
-	right: 0;
-	top: 0;
+    font-size: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, .3);
+    padding: 3px 7px 6px;
+    background-color: #eee;
+    color: #000;
+    position: relative;
+    right: 0;
+    top: 0;
 }
 
 #menu::before {
-	content: "☰";
+    content: "☰";
 }
 
 #menu.open::before {
-	content: "X";
+    content: "X";
 }
 
 .navigation li {
     display: none;
 }
+
 /* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
 .open li {
-	display: block;
-	width: 100%;
+    display: block;
+    width: 100%;
 }
+
 .open li a {
-	display: block;
+    display: block;
 }
 
- #shadow-host-companion {
+#shadow-host-companion {
     display: none;
- }
+}
 
- /* DISCOVER PAGE */
- picture img {
+/* DISCOVER PAGE */
+picture img {
     width: 100%;
     height: auto;
     border-radius: 5px;
     box-shadow: 0 0 20px gray;
- }
+}
 
 div#visits p {
     text-align: center;
- }
+}
 
- section p {
+section p {
     padding: 1rem;
- }
+}
 
- /* JOIN PAGE */
+/* JOIN PAGE */
 
 #join-main {
     display: flex;
@@ -231,21 +240,23 @@ fieldset legend {
     color: rgb(49, 2, 49);
 }
 
- label, input {
+label,
+input {
     display: block;
- }
+}
 
- label {
+label {
     margin-top: 2rem;
- }
+}
 
- input, textarea {
+input,
+textarea {
     padding: .75rem;
     width: 90%;
     max-width: 20rem;
- }
+}
 
- #btn {
+#btn {
     margin: 1rem;
     background-color: rgb(76, 39, 76);
     max-width: 15rem;
@@ -253,58 +264,60 @@ fieldset legend {
     border-radius: 15px;
     padding: .75rem;
     margin-left: 2rem;
- }
+}
 
- select {
+select {
     padding: .75rem;
     max-width: 15rem;
     width: 70%;
- }
+}
 
- /* TABLE */
- table {
+/* TABLE */
+table {
     margin: auto;
-	border: thin solid black;
-	box-shadow: 0 0 10px rgb(230, 220, 220);
-	border-collapse: collapse;
+    border: thin solid black;
+    box-shadow: 0 0 10px rgb(230, 220, 220);
+    border-collapse: collapse;
 }
 
 caption {
-  padding: 10px;
-  caption-side: bottom;
-  color: var(--back);
-  font-size: .85rem;
+    padding: 10px;
+    caption-side: bottom;
+    color: var(--back);
+    font-size: .85rem;
 }
 
-th, td {
-	padding: 7px 15px;
-	border: 1px solid rgb(41, 40, 40);
+th,
+td {
+    padding: 7px 15px;
+    border: 1px solid rgb(41, 40, 40);
 }
 
 th {
-	background-color: rgb(200, 158, 200);
-	font-size: larger;
+    background-color: rgb(200, 158, 200);
+    font-size: larger;
     color: black;
 }
 
-#header, #blank {
+#header,
+#blank {
     background-color: rgb(76, 39, 76);
     color: white;
     padding: .75rem;
 }
 
 td {
-	text-align: center;
+    text-align: center;
     padding: .75rem;
 }
 
 tbody tr:nth-child(odd) {
-	background-color: rgb(230, 220, 220);
+    background-color: rgb(230, 220, 220);
 }
 
 tbody td:nth-child(1) {
-   font: bold;
-   font-weight: 800;
+    font: bold;
+    font-weight: 800;
 }
 
 #join-table {
@@ -314,7 +327,8 @@ tbody td:nth-child(1) {
 
 /* DIRECTORY PAGE */
 
-#grid, #list {
+#grid,
+#list {
     margin: .3rem;
     border-radius: 5px;
     font-weight: 700;
@@ -331,20 +345,21 @@ tbody td:nth-child(1) {
 }
 
 .list {
-	display: flex;
-	flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
-.list section > * {
+.list section>* {
     padding: 0.1rem;
 }
 
-article, div {
+article,
+div {
     width: 100%;
 }
 
 .list section {
-	display: block;
+    display: block;
     margin: 0;
 }
 
@@ -352,29 +367,29 @@ article, div {
     text-align: left;
 }
 
-.list section > * {
-	margin: 0 1rem;
+.list section>* {
+    margin: 0 1rem;
 }
 
 .list section img {
-	display: none; /* smaller viewports only */
+    display: none;
+    /* smaller viewports only */
 }
 
 .list section h3 {
-	font-size: 1rem;
-	font-family: Roboto, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-family: Roboto, Helvetica, sans-serif;
 }
 
 .list section:nth-child(even) {
-	background-color: #bed;
+    background-color: #bed;
 }
 
 section h3 {
-	font-size: 1.5rem;
+    font-size: 1.5rem;
 }
 
 section p {
-	font-weight: 600;
-	font-size: smaller;
+    font-weight: 600;
+    font-size: smaller;
 }
-

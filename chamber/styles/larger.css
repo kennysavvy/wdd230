@@ -1,5 +1,10 @@
-@media screen and (min-width: 800px)
-{
+@media screen and (min-width: 800px) {
+
+    :root {
+        --primary-color: #3498db;
+        --secondary-color: #2ecc71;
+        --font-size: 16px;
+    }
 
     body {
         width: 100%;
@@ -34,17 +39,18 @@
     }
 
     #menu {
-		display: none; /* hide hamburger button */
-	}
+        display: none;
+        /* hide hamburger button */
+    }
 
-	.navigation {
-		flex-direction: row;
-	}
+    .navigation {
+        flex-direction: row;
+    }
 
-	.navigation li {
-		display: block;
-		flex: 1 1 100%;
-	}
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
 
     #index_main {
         display: grid;
@@ -56,16 +62,17 @@
     #index_main section {
         margin: .1rem;
     }
-    
+
     .hero {
         object-fit: contain;
         align-self: center;
         grid-column: 1 / span 3;
     }
-     #article {
+
+    #article {
         display: flex;
         flex-direction: column;
-     }
+    }
 
     #right-panel {
         padding: .5rem;
@@ -80,7 +87,7 @@
     footer {
         flex-direction: row;
     }
-    
+
     /* DISCOVER PAGE */
     main {
         display: grid;
@@ -131,15 +138,15 @@
     }
 
     .list section img {
-	    width: 100%;
+        width: 100%;
         height: auto;
     }
 
     .list section {
         display: grid;
-	    grid-template-columns: 1fr 1fr 6rem 1fr 6rem;
-	    margin: 0;
-	    padding: 0.75rem;
+        grid-template-columns: 1fr 1fr 6rem 1fr 6rem;
+        margin: 0;
+        padding: 0.75rem;
     }
 
 }
