@@ -12,7 +12,7 @@
                     "title": "Media-Query"
                 },
                 {
-                    "url": "https://codepen.io/mistShard/pen/KKbyPZd",
+                    "url": "https://codepen.io/kennysavvy/pen/eYazZgj?editors=1111",
                     "title": "Code Pen"
                 }
             ]
@@ -25,7 +25,7 @@
                     "title": "Design Principles"
                 },
                 {
-                    "url": "https://codepen.io/mistShard/pen/RwEMVrG?editors=0100",
+                    "url": "https://codepen.io/kennysavvy/pen/abrZNJM?editors=0100",
                     "title": "Hamburger Menu"
                 },
                 {
@@ -59,7 +59,7 @@
             "week": "Week 4",
             "links": [
                 {
-                    "url": "https://codepen.io/mistShard/pen/WNLLByW",
+                    "url": "https://codepen.io/kennysavvy/pen/pombyea",
                     "title": "CSS Pseudo-classes"
                 },
                 {
@@ -80,7 +80,7 @@
             "week": "Week 5",
             "links": [
                 {
-                    "url": "https://codepen.io/mistShard/pen/WNLmOrB",
+                    "url": "https://codepen.io/kennysavvy/pen/gOJMrWw",
                     "title": "CSS Pseudo-elements"
                 },
                 {
@@ -96,6 +96,6 @@
                     "title": "Consuming a third-party weather API"
                 }
             ]
-        }     
+        }
     ]
 }
