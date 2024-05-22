@@ -1,10 +1,10 @@
-const contentURL = "https://mistshard.github.io/wdd230/chamber/data/members.json";
+const contentURL = "https://kennysavvy.github.io/wdd230/chamber/data/members.json";
 const cards = document.querySelector('#article');
 
 async function getContent(contentURL) {
     const response = await fetch(contentURL);
-    
-    if(response.ok) {
+
+    if (response.ok) {
         const data = await response.json();
         displayContent(data.organizations);
     }
@@ -34,11 +34,11 @@ const displayContent = (organizations) => {
 
     for (let i = 0; i < 3; i++) {
         let object = arr[Math.floor(Math.random() * arr.length)];
-        if (containsObject(object, final_arr) == false ) {
+        if (containsObject(object, final_arr) == false) {
             final_arr.push(object);
         }
     }
-    
+
     final_arr.forEach(member => {
         let card = document.createElement('section');
         card.classList.add("spotlight");
@@ -58,7 +58,7 @@ const displayContent = (organizations) => {
 
         let memberPhone = document.createElement('p');
         memberPhone.textContent = `${member.phone}`;
-        
+
         let memberURLHolder = document.createElement('p');
 
         let memberURL = document.createElement('a');
@@ -69,7 +69,7 @@ const displayContent = (organizations) => {
 
         let memberLevel = document.createElement('h4');
         memberLevel.textContent = `${member.level}`;
-        
+
 
         card.appendChild(memberLogo);
         card.appendChild(memberName);
@@ -80,8 +80,8 @@ const displayContent = (organizations) => {
         cards.appendChild(card);
     })
 
-        
-  
+
+
 }
 
 getContent(contentURL);

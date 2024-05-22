@@ -1,12 +1,12 @@
-const contentURL = "https://mistshard.github.io/wdd230/chamber/data/members.json";
+const contentURL = "https://kennysavvy.github.io/wdd230/chamber/data/members.json";
 const cards = document.querySelector('#article');
 const btn = document.querySelector('#grid-btn');
 
 
 async function getContent(contentURL) {
     const response = await fetch(contentURL);
-    
-    if(response.ok) {
+
+    if (response.ok) {
         const data = await response.json();
         //console.log(data);
         displayContent(data.organizations);
@@ -32,7 +32,7 @@ const displayContent = (organizations) => {
 
         let memberPhone = document.createElement('p');
         memberPhone.textContent = `${member.phone}`;
-        
+
         let memberURLHolder = document.createElement('p');
 
         let memberURL = document.createElement('a');
@@ -43,7 +43,7 @@ const displayContent = (organizations) => {
 
         let memberLevel = document.createElement('h4');
         memberLevel.textContent = `${member.level}`;
-        
+
 
         card.appendChild(memberLogo);
         card.appendChild(memberName);
@@ -65,14 +65,14 @@ const display = document.querySelector("#article");
 // The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
 
 gridbutton.addEventListener("click", () => {
-	// example using arrow function
-	display.classList.add("grid");
-	display.classList.remove("list");
+    // example using arrow function
+    display.classList.add("grid");
+    display.classList.remove("list");
 });
 
 listbutton.addEventListener("click", showList); // example using defined function
 
 function showList() {
-	display.classList.add("list");
-	display.classList.remove("grid");
+    display.classList.add("list");
+    display.classList.remove("grid");
 }
