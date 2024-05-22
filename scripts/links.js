@@ -35,10 +35,10 @@ function displayLinks(weeks) {
 
             list_element.appendChild(link_url);
             card.appendChild(list_element);
-            
+
         });
-            
-        })
-    }
+
+    })
+}
 
 getLinks(linksURL);
