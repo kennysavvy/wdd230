@@ -10,7 +10,7 @@ html {
     padding: 0.2rem;
     display: flex;
     justify-content: center;
-    background-color: rgb(128, 141, 128);
+    background: linear-gradient(to right, #eeeff4, #a0b7fd);
     font-size: 17px;
 }
 
@@ -26,7 +26,7 @@ header,
 footer {
     display: flex;
     flex-direction: column;
-    background-color: rgb(2, 79, 2);
+    background: linear-gradient(to right, #133c7a, #7b9afe, #86a8e7, #7f7fd5);
     color: rgb(251, 247, 251);
     padding: 1rem;
     align-items: center;
